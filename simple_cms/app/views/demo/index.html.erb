@@ -1,0 +1,9 @@
+<h1>Demo#index</h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+
+<a href="/demo/view">View</a><br />
+<%= link_to('View 2', {:action => 'view'}) %><br />
+
+<%= link_to('Params', {:action => 'view', :page => 3, :id => 20}) %><br />
+
+<%= link_to('Roar', '#', :onclick => "jsName('JavaScript'); return true;") %>

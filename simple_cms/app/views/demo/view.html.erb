@@ -1,0 +1,20 @@
+<h1>Demo#view</h1>
+<p>Find me in app/views/demo/view.html.erb</p>
+
+<% target = "world" %>
+<%= "Hello #{target}" %><br />
+<% 3.times do |n| %>
+  <%= n %><br />
+<% end %>
+<% @array.each do |n| %>
+  <%= n %><br />
+<% end %>
+<br />
+<%= link_to('Home', {:action => 'index'}) %><br />
+
+<br />
+
+ID : <%= @id %> <br />
+ID : <%= params[:id] %> <br />
+Page : <%= @page %> <br />
+Next Page : <%= @page.to_i + 1 %> <br />
